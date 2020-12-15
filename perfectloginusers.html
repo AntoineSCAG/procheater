@@ -70,7 +70,10 @@ return " ";
    </body>
 </html>
 
-delay(function(){
-    // do stuff
-}, 5000 ); // end delay
-<meta http-equiv = "refresh" content = "10; url = https://monurl.ca/cheat" />
+function stateChange(newState) {
+    setTimeout(function () {
+        if (newState == -1) {
+            alert('VIDEO HAS STOPPED');
+        }
+    }, 5000);
+}
