@@ -70,8 +70,9 @@ return " ";
    </body>
 </html>
 
-function close_window() {
-  if (confirm("Close Window?")) {
-    close();
-  }
-}
+
+This method works in Chrome and IE:
+
+<a href="blablabla" onclick="setTimeout(function(){var ww = window.open(window.location, '_self'); ww.close(); }, 1000);">
+    If you click on this the window will be closed after 1000ms
+</a>
